@@ -20,7 +20,7 @@ def find_max_joltage(batt_string, batt_count):
                     digit_found = True
                     string_position = scanning_pointer
                     joltage_digits.append(batt_string[scanning_pointer])
-                    # If all digits are found, join the up and return it as a number
+                    # If all digits are found, join them up and return it as a number
                     if len(joltage_digits) == batt_count: 
                         return int("".join(joltage_digits))
                 else:
